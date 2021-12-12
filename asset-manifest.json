@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.js": "/Dekode/static/js/main.ce49198a.chunk.js",
+    "main.js.map": "/Dekode/static/js/main.ce49198a.chunk.js.map",
+    "runtime-main.js": "/Dekode/static/js/runtime-main.5f86bfc8.js",
+    "runtime-main.js.map": "/Dekode/static/js/runtime-main.5f86bfc8.js.map",
+    "static/js/2.2d80bf30.chunk.js": "/Dekode/static/js/2.2d80bf30.chunk.js",
+    "static/js/2.2d80bf30.chunk.js.map": "/Dekode/static/js/2.2d80bf30.chunk.js.map",
+    "static/js/3.a6ddbf0d.chunk.js": "/Dekode/static/js/3.a6ddbf0d.chunk.js",
+    "static/js/3.a6ddbf0d.chunk.js.map": "/Dekode/static/js/3.a6ddbf0d.chunk.js.map",
+    "static/js/4.f115d948.chunk.js": "/Dekode/static/js/4.f115d948.chunk.js",
+    "static/js/4.f115d948.chunk.js.map": "/Dekode/static/js/4.f115d948.chunk.js.map",
+    "static/js/5.19823c68.chunk.js": "/Dekode/static/js/5.19823c68.chunk.js",
+    "static/js/5.19823c68.chunk.js.map": "/Dekode/static/js/5.19823c68.chunk.js.map",
+    "static/js/6.d4700dbc.chunk.js": "/Dekode/static/js/6.d4700dbc.chunk.js",
+    "static/js/6.d4700dbc.chunk.js.map": "/Dekode/static/js/6.d4700dbc.chunk.js.map",
+    "static/js/7.2e5d2d93.chunk.js": "/Dekode/static/js/7.2e5d2d93.chunk.js",
+    "static/js/7.2e5d2d93.chunk.js.map": "/Dekode/static/js/7.2e5d2d93.chunk.js.map",
+    "static/js/8.a12eba8b.chunk.js": "/Dekode/static/js/8.a12eba8b.chunk.js",
+    "static/js/8.a12eba8b.chunk.js.map": "/Dekode/static/js/8.a12eba8b.chunk.js.map",
+    "index.html": "/Dekode/index.html",
+    "static/js/2.2d80bf30.chunk.js.LICENSE.txt": "/Dekode/static/js/2.2d80bf30.chunk.js.LICENSE.txt",
+    "static/js/3.a6ddbf0d.chunk.js.LICENSE.txt": "/Dekode/static/js/3.a6ddbf0d.chunk.js.LICENSE.txt",
+    "static/media/1stor.6e3229b1.svg": "/Dekode/static/media/1stor.6e3229b1.svg",
+    "static/media/2stor.4f6d359f.svg": "/Dekode/static/media/2stor.4f6d359f.svg",
+    "static/media/Facebook.18845218.svg": "/Dekode/static/media/Facebook.18845218.svg",
+    "static/media/Forward.710f8d53.svg": "/Dekode/static/media/Forward.710f8d53.svg",
+    "static/media/Logo.8c377ce1.svg": "/Dekode/static/media/Logo.8c377ce1.svg",
+    "static/media/Twitter.daf6e3b6.svg": "/Dekode/static/media/Twitter.daf6e3b6.svg",
+    "static/media/back.0eaffc39.svg": "/Dekode/static/media/back.0eaffc39.svg",
+    "static/media/instagram.021a5c48.svg": "/Dekode/static/media/instagram.021a5c48.svg",
+    "static/media/ocean.4c14052c.jpg": "/Dekode/static/media/ocean.4c14052c.jpg",
+    "static/media/search.0a112595.svg": "/Dekode/static/media/search.0a112595.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f86bfc8.js",
+    "static/js/2.2d80bf30.chunk.js",
+    "static/js/main.ce49198a.chunk.js"
+  ]
+}
