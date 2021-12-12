@@ -23,7 +23,7 @@ export const theme = createTheme({
     },
   },
   typography: {
-    /* fontFamily: `Add your font`, */
+    /* fontFamily: `To provide by company`, */
     h1: {
       fontSize: `56px`,
       lineHeight: `64px`,

@@ -29,7 +29,7 @@ const CaruseleItem = ({
   ...rootProps
 }: CaruseleItemProps) => (
   <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
-    <Box>
+    <Box display="flex" justifyContent="center">
       <StyledImg src={item.imgUrl} alt={item.title} />
     </Box>
     <StyledTitle variant="h2">{item.title}</StyledTitle>
