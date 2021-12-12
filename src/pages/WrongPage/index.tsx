@@ -22,9 +22,8 @@ const WrongPage = ({ sx, classes, children, ...rootProps }: WrongPageProps) => {
   return (
     <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
       <StyledMessage className={classes?.message} gutterBottom>
-        {translated.example}
+        {translated.title}
       </StyledMessage>
-      WrongPage
     </StyledRoot>
   );
 };

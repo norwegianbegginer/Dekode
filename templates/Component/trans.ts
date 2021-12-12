@@ -4,8 +4,8 @@ export const useTrans = makeTranslations({
   en_US: {
     example: `Example`,
   },
-  de_DE: {
-    example: `Beispiel`,
+  no_NO: {
+    example: `Eksempel`,
   },
   pl_PL: {
     example: `Przykład`,

@@ -4,6 +4,8 @@ import React from 'react';
 // Project scoped imports
 
 // Module scoped imports
+import { Container, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 import { useTrans } from './trans';
 import { StyledRoot, StyledMessage } from './styles';
 import { HomeProps } from './types';
@@ -21,10 +23,10 @@ const Home = ({ sx, classes, children, ...rootProps }: HomeProps) => {
 
   return (
     <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
-      <StyledMessage className={classes?.message} gutterBottom>
-        {translated.example}
-      </StyledMessage>
-      Homepage
+      <Container maxWidth="lg">
+        <Typography variant="h1">Homepage</Typography>
+        <Link to="circles">Circles</Link>
+      </Container>
     </StyledRoot>
   );
 };

@@ -4,7 +4,7 @@ export const useTrans = makeTranslations({
   en_US: {
     example: `FallbackPage`,
   },
-  de_DE: {
+  no_NO: {
     example: `FallbackPage`,
   },
   pl_PL: {

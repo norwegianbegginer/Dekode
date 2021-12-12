@@ -12,7 +12,7 @@ function App() {
   return (
     <ErrorBoundary>
       <RecoilRoot>
-        <LitteraService initialLocale="pl_PL">
+        <LitteraService initialLocale="no_NO">
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <Suspense fallback={<FallbackPage />}>

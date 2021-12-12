@@ -1,6 +1,6 @@
 import { createLittera } from '@assembless/react-littera';
 
-const LOCALES = [`en_US`, `de_DE`, `pl_PL`] as const;
+const LOCALES = [`en_US`, `no_NO`, `pl_PL`] as const;
 
 const PRESET = {
   en_US: {
@@ -13,10 +13,10 @@ const PRESET = {
     yes: `Tak`,
     no: `Nie`,
   },
-  de_DE: {
-    language: `Sprache`,
+  no_NO: {
+    language: `Språk`,
     yes: `Ja`,
-    no: `Nein`,
+    no: `Nei`,
   },
 };
 const { LitteraService, makeTranslations, useLitteraMethods } = createLittera(

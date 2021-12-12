@@ -1,12 +1,14 @@
 // Dependencies scoped imports
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import { Box } from '@mui/material';
 
 // Project scoped imports
+import NavBar from '../../components/NavBar';
+import Footer from '../../components/Footer';
 
 // Module scoped imports
-import { useTrans } from './trans';
-import { StyledRoot, StyledMessage } from './styles';
+import { StyledRoot } from './styles';
 import { LayoutProps } from './types';
 
 /**
@@ -17,17 +19,14 @@ import { LayoutProps } from './types';
  * - [Layout API](https://github.com/norwegianbegginer/Dekode/tree/master/src/pages/Layout)
  * - inherits [Box API](https://material-ui.com/api/box/)
  */
-const Layout = ({ sx, classes, children, ...rootProps }: LayoutProps) => {
-  const translated = useTrans();
-
-  return (
-    <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
-      <StyledMessage className={classes?.message} gutterBottom>
-        {translated.example}
-      </StyledMessage>
+const Layout = ({ sx, classes, ...rootProps }: LayoutProps) => (
+  <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
+    <NavBar />
+    <Box flex={1}>
       <Outlet />
-    </StyledRoot>
-  );
-};
+    </Box>
+    <Footer />
+  </StyledRoot>
+);
 
 export default Layout;
