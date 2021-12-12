@@ -19,7 +19,6 @@ import {
   StyledLogoWrapper,
   StyledToolbar,
 } from './styles';
-import { useTrans } from './trans';
 import { NavBarProps } from './types';
 import { NAV_LINKS } from './constants';
 
@@ -31,8 +30,7 @@ import { NAV_LINKS } from './constants';
  * - [NavBar API](https://github.com/norwegianbegginer/Dekode/tree/master/src/components/NavBar)
  * - inherits [Box API](https://material-ui.com/api/box/)
  */
-const NavBar = ({ sx, classes, ...rootProps }: NavBarProps) => {
-  const translated = useTrans();
+const NavBar = ({ classes, ...rootProps }: NavBarProps) => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = React.useState(false);
 

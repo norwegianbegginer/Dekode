@@ -16,6 +16,4 @@ export default {
 const Template: ComponentStory<typeof NavBar> = (args) => <NavBar {...args} />;
 
 export const Standard = Template.bind({});
-Standard.args = {
-  children: <div>sued xe rolod tema tis muspi meroL</div>,
-};
+Standard.args = {};

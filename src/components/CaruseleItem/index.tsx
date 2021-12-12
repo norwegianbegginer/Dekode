@@ -8,6 +8,7 @@ import { Box } from '@mui/material';
 import {
   StyledDateTxt,
   StyledDescription,
+  StyledImg,
   StyledRoot,
   StyledTitle,
 } from './styles';
@@ -22,21 +23,18 @@ import { CaruseleItemProps } from './types';
  * - inherits [Box API](https://material-ui.com/api/box/)
  */
 const CaruseleItem = ({
-  imgUrl,
-  title,
-  date,
-  description,
+  item,
   sx,
   classes,
   ...rootProps
 }: CaruseleItemProps) => (
   <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
     <Box>
-      <img src={imgUrl} alt={title} />
+      <StyledImg src={item.imgUrl} alt={item.title} />
     </Box>
-    <StyledTitle variant="h2">{title}</StyledTitle>
-    <StyledDateTxt variant="body2">{date}</StyledDateTxt>
-    <StyledDescription variant="body1">{description}</StyledDescription>
+    <StyledTitle variant="h2">{item.title}</StyledTitle>
+    <StyledDateTxt variant="body2">{item.date}</StyledDateTxt>
+    <StyledDescription variant="body1">{item.description}</StyledDescription>
   </StyledRoot>
 );
 

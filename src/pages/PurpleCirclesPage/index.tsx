@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom';
 import BreadCrumbsBox from '../../components/BreadCrumbsBox';
 import ImgBoxWithCard from '../../components/ImgBoxWithCard';
 import PersonCard from '../../components/PersonCard';
+import CustomCarousel from '../../components/Carousel';
 import PersonImg from '../../assets/kreated-media-0fN7Fxv1eWA-unsplash 1.jpg';
 import OceanImg from '../../assets/ocean.jpg';
-import CaruseleItem from '../../components/CaruseleItem';
 
 // Module scoped imports
 import { useTrans } from './trans';
@@ -83,26 +83,8 @@ const PurpleCirclesPage = ({
             </StyledTxt>
           </StyledContainer>
         </Container>
-        <Box display="flex" gap="48px" mb={12}>
-          <CaruseleItem
-            imgUrl={PersonImg}
-            title="Lorem ipsum"
-            date="17. august 2020"
-            description="In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum."
-          />
-          <CaruseleItem
-            imgUrl={PersonImg}
-            title="Lorem ipsum"
-            date="17. august 2020"
-            description="In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum."
-          />
-          <CaruseleItem
-            imgUrl={PersonImg}
-            title="Lorem ipsum"
-            date="17. august 2020"
-            description="In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum."
-          />
-        </Box>
+        <CustomCarousel />
+
         <Container maxWidth="lg">
           <StyledContainer maxWidth="sm">
             <StyledSectionTitle variant="h2">Teft?</StyledSectionTitle>

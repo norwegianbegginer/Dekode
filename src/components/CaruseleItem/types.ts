@@ -1,10 +1,8 @@
 import { BoxProps } from '@mui/material';
+import { TCarouselItem } from '../Carousel/types';
 
 export interface CaruseleItemProps extends BoxProps {
-  imgUrl: string;
-  title: string;
-  date: string;
-  description: string;
+  item: TCarouselItem;
   /**
    * Override or extend the styles applied to the component.
    */

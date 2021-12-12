@@ -26,7 +26,9 @@ const PersonCard = ({
   ...rootProps
 }: PersonCardProps) => (
   <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
-    <StyledImg src={imgUrl} alt="" />
+    <Box>
+      <StyledImg src={imgUrl} alt="" />
+    </Box>
     <Box>
       <StyledTitle variant="h4" variantMapping={{ h4: `p` }}>
         {title}

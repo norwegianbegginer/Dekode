@@ -1,10 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { createArrayFromPath } from '../utils/helpers';
-
-type TBreadcrumbObj = {
-  name: string;
-  path: string;
-};
+import { TBreadcrumbObj } from './types';
 
 export const useBreadCrumbs = () => {
   const { pathname } = useLocation();

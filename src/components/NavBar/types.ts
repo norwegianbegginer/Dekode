@@ -1,6 +1,4 @@
-import { BoxProps } from '@mui/material';
-
-export interface NavBarProps extends BoxProps {
+export interface NavBarProps {
   /**
    * Override or extend the styles applied to the component.
    */
