@@ -16,7 +16,7 @@ import { WrongPageProps } from './types';
  * - [WrongPage API](https://github.com/norwegianbegginer/Dekode/tree/master/src/pages/WrongPage)
  * - inherits [Box API](https://material-ui.com/api/box/)
  */
-const WrongPage = ({ sx, classes, children, ...rootProps }: WrongPageProps) => {
+const WrongPage = ({ sx, classes, ...rootProps }: WrongPageProps) => {
   const translated = useTrans();
 
   return (

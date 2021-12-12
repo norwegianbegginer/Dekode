@@ -9,6 +9,7 @@ import ImgBoxWithCard from '../../components/ImgBoxWithCard';
 import PersonCard from '../../components/PersonCard';
 import PersonImg from '../../assets/kreated-media-0fN7Fxv1eWA-unsplash 1.jpg';
 import OceanImg from '../../assets/ocean.jpg';
+import CaruseleItem from '../../components/CaruseleItem';
 
 // Module scoped imports
 import { useTrans } from './trans';
@@ -20,9 +21,9 @@ import {
   StyledButtonWrapper,
   StyledSectionTitle,
   StyledPageSubTitle,
+  StyledBtnTxt,
 } from './styles';
 import { PurpleCirclesPageProps } from './types';
-import CaruseleItem from '../../components/CaruseleItem';
 
 /**
  * @description Purple circles page with purple circles. Description to extend.
@@ -42,12 +43,13 @@ const PurpleCirclesPage = ({
   return (
     <Box>
       <BreadCrumbsBox />
-      <Container maxWidth="lg">
-        <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
+      <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
+        <Container maxWidth="lg">
           <StyledPageTitle variant="h1">{translated.title}</StyledPageTitle>
           <StyledPageSubTitle variant="h2">
             {translated.subTitle}
           </StyledPageSubTitle>
+
           <StyledContainer maxWidth="sm">
             <PersonCard
               imgUrl={PersonImg}
@@ -58,11 +60,14 @@ const PurpleCirclesPage = ({
               {translated.pAboveImg}
             </StyledTxt>
           </StyledContainer>
-          <ImgBoxWithCard
-            imgUrl={OceanImg}
-            imgAlt="Ocean"
-            boxTxt="“The process of making the dye was long, difficult and expensive”"
-          />
+        </Container>
+
+        <ImgBoxWithCard
+          imgUrl={OceanImg}
+          imgAlt="Ocean"
+          boxTxt="“The process of making the dye was long, difficult and expensive”"
+        />
+        <Container maxWidth="lg">
           <StyledContainer maxWidth="sm">
             <Typography variant="body2" mt={3} mb={6}>
               {translated.imgDescription}
@@ -77,26 +82,28 @@ const PurpleCirclesPage = ({
               {translated.resultText}
             </StyledTxt>
           </StyledContainer>
-          <Box display="flex" gap="48px" mb={12}>
-            <CaruseleItem
-              imgUrl={PersonImg}
-              title="Lorem ipsum"
-              date="17. august 2020"
-              description="In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum."
-            />
-            <CaruseleItem
-              imgUrl={PersonImg}
-              title="Lorem ipsum"
-              date="17. august 2020"
-              description="In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum."
-            />
-            <CaruseleItem
-              imgUrl={PersonImg}
-              title="Lorem ipsum"
-              date="17. august 2020"
-              description="In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum."
-            />
-          </Box>
+        </Container>
+        <Box display="flex" gap="48px" mb={12}>
+          <CaruseleItem
+            imgUrl={PersonImg}
+            title="Lorem ipsum"
+            date="17. august 2020"
+            description="In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum."
+          />
+          <CaruseleItem
+            imgUrl={PersonImg}
+            title="Lorem ipsum"
+            date="17. august 2020"
+            description="In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum."
+          />
+          <CaruseleItem
+            imgUrl={PersonImg}
+            title="Lorem ipsum"
+            date="17. august 2020"
+            description="In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum."
+          />
+        </Box>
+        <Container maxWidth="lg">
           <StyledContainer maxWidth="sm">
             <StyledSectionTitle variant="h2">Teft?</StyledSectionTitle>
             <StyledTxt variant="h4" variantMapping={{ h4: `p` }}>
@@ -104,12 +111,12 @@ const PurpleCirclesPage = ({
             </StyledTxt>
             <StyledButtonWrapper>
               <Button component={Link} to="/" variant="outlined">
-                {translated.btnTxt}
+                <StyledBtnTxt>{translated.btnTxt}</StyledBtnTxt>
               </Button>
             </StyledButtonWrapper>
           </StyledContainer>
-        </StyledRoot>
-      </Container>
+        </Container>
+      </StyledRoot>
     </Box>
   );
 };

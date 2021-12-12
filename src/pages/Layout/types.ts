@@ -10,6 +10,4 @@ export interface LayoutProps extends BoxProps {
 export interface LayoutClasses {
   /** Styles applied to the root element. */
   root: string;
-  /** Styles applied to the message element. */
-  message: string;
 }

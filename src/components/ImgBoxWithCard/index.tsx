@@ -30,15 +30,17 @@ const ImgBoxWithCard = ({
   classes,
   ...rootProps
 }: ImgBoxWithCardProps) => (
-  <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
-    <Box flex={1} />
-    <StyledImg src={imgUrl} alt={imgAlt} />
+  <StyledContainer>
+    <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
+      <Box flex={1} />
+      <StyledImg src={imgUrl} alt={imgAlt} />
+    </StyledRoot>
     <StyledCard>
       <CardTxt variant="h3" variantMapping={{ h3: `p` }}>
         {boxTxt}
       </CardTxt>
     </StyledCard>
-  </StyledRoot>
+  </StyledContainer>
 );
 
 export default ImgBoxWithCard;

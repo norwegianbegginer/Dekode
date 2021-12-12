@@ -28,12 +28,12 @@ const LanguageSelector = ({ sx, classes }: LanguageSelectorProps) => {
   const handleClick = (e: React.MouseEvent<any>) => {
     setAnchorEl(e.currentTarget);
   };
-  const handleClose = (e: any) => {
+  const handleClose = () => {
     setAnchorEl(null);
   };
 
-  const handleItemClick = (e: any) => {
-    setLocale(e.target.getAttribute(`value`));
+  const handleItemClick = (e: React.MouseEvent<any>) => {
+    setLocale(e.currentTarget.getAttribute(`value`));
     setAnchorEl(null);
   };
 

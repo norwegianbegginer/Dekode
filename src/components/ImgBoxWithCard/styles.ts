@@ -2,14 +2,14 @@ import { Box, Typography, styled, Container } from '@mui/material';
 
 export const StyledRoot = styled(Box)(({ theme }) => ({
   display: `flex`,
-  position: `relative`,
+
   maxHeight: `560px`,
   width: `100%`,
 }));
 
 export const StyledContainer = styled(Container)(({ theme }) => ({
-  '&.MuiContainer-root': { padding: 0 },
-  '& .MuiContainer-maxWidthSm': { padding: 0 },
+  '&.MuiContainer-root': { paddingRight: 0, maxWidth: `1200px` },
+  position: `relative`,
 }));
 
 export const StyledCard = styled(Box)(({ theme }) => ({

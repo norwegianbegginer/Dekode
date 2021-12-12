@@ -10,6 +10,4 @@ export interface HomeProps extends BoxProps {
 export interface HomeClasses {
   /** Styles applied to the root element. */
   root: string;
-  /** Styles applied to the message element. */
-  message: string;
 }

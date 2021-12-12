@@ -4,7 +4,6 @@ import React from 'react';
 // Project scoped imports
 
 // Module scoped imports
-import { useTrans } from './trans';
 import { StyledRoot, StyledMessage } from './styles';
 import { ErrorPageProps } from './types';
 
@@ -16,17 +15,12 @@ import { ErrorPageProps } from './types';
  * - [ErrorPage API](https://github.com/norwegianbegginer/Dekode/tree/master/src/pages/ErrorPage)
  * - inherits [Box API](https://material-ui.com/api/box/)
  */
-const ErrorPage = ({ sx, classes, message, ...rootProps }: ErrorPageProps) => {
-  const translated = useTrans();
-
-  return (
-    <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
-      <StyledMessage className={classes?.message} gutterBottom>
-        {translated.example}
-      </StyledMessage>
-      PageError
-    </StyledRoot>
-  );
-};
+const ErrorPage = ({ sx, classes, message, ...rootProps }: ErrorPageProps) => (
+  <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
+    <StyledMessage className={classes?.message} gutterBottom>
+      {message}
+    </StyledMessage>
+  </StyledRoot>
+);
 
 export default ErrorPage;

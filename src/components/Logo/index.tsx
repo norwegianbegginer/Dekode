@@ -1,12 +1,11 @@
 // Dependencies scoped imports
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 // Project scoped imports
 import LogoSvg from '../../assets/Logo.svg';
 
 // Module scoped imports
-import { StyledRoot } from './styles';
+import { StyledLink, StyledRoot } from './styles';
 import { LogoProps } from './types';
 
 /**
@@ -24,14 +23,14 @@ const Logo = ({
 }: LogoProps & typeof defaultProps) => {
   if (redirect)
     return (
-      <Link to="/">
+      <StyledLink to="/">
         <StyledRoot
           src={LogoSvg}
           alt=""
           className={classes?.root}
           {...rootProps}
         />
-      </Link>
+      </StyledLink>
     );
   return (
     <StyledRoot src={LogoSvg} alt="" className={classes?.root} {...rootProps} />

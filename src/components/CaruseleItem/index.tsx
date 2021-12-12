@@ -1,6 +1,6 @@
 // Dependencies scoped imports
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 
 // Project scoped imports
 

@@ -6,8 +6,7 @@ import React from 'react';
 // Module scoped imports
 import { Container, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { useTrans } from './trans';
-import { StyledRoot, StyledMessage } from './styles';
+import { StyledRoot } from './styles';
 import { HomeProps } from './types';
 
 /**
@@ -18,17 +17,13 @@ import { HomeProps } from './types';
  * - [Home API](https://github.com/norwegianbegginer/Dekode/tree/master/src/pages/Home)
  * - inherits [Box API](https://material-ui.com/api/box/)
  */
-const Home = ({ sx, classes, children, ...rootProps }: HomeProps) => {
-  const translated = useTrans();
-
-  return (
-    <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
-      <Container maxWidth="lg">
-        <Typography variant="h1">Homepage</Typography>
-        <Link to="circles">Circles</Link>
-      </Container>
-    </StyledRoot>
-  );
-};
+const Home = ({ sx, classes, ...rootProps }: HomeProps) => (
+  <StyledRoot sx={sx} className={classes?.root} {...rootProps}>
+    <Container maxWidth="lg">
+      <Typography variant="h1">Homepage</Typography>
+      <Link to="circles">Circles</Link>
+    </Container>
+  </StyledRoot>
+);
 
 export default Home;

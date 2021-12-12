@@ -13,9 +13,9 @@ export const useBreadCrumbs = () => {
 
   paths.reduce((acc, crumb) => {
     const name = crumb.replace(`-`, ` `);
-    breadCrumbsArray.push({ name, path: `${acc}/${crumb}` });
     // eslint-disable-next-line no-param-reassign
     acc += `/${crumb}`;
+    breadCrumbsArray.push({ name, path: acc });
     return acc;
   }, ``);
 

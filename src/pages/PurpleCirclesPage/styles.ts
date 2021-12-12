@@ -50,3 +50,7 @@ export const StyledButtonWrapper = styled(Box)(({ theme }) => ({
   justifyContent: `center`,
   marginBottom: theme.spacing(7.5),
 }));
+
+export const StyledBtnTxt = styled(Typography)(({ theme }) => ({
+  fontWeight: 500,
+}));

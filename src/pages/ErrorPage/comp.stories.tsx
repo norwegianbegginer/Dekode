@@ -19,6 +19,5 @@ const Template: ComponentStory<typeof ErrorPage> = (args) => (
 
 export const Standard = Template.bind({});
 Standard.args = {
-  message: `Lorem ipsum sit amet dolor ex deus`,
   children: <div>sued xe rolod tema tis muspi meroL</div>,
 };
